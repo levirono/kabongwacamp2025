@@ -19,30 +19,39 @@
             <span class="bg-blue-100 text-yellow-600 px-4 py-2 rounded shadow font-semibold">Hymnal 88, Nzk 38</span>
           </div>
           <div class="mb-8 animate-fade-in delay-800">
-            <span class="inline-block bg-blue-900 bg-opacity-90 text-white text-xl md:text-2xl font-bold px-6 py-2 rounded shadow">
+            <span
+              class="inline-block bg-blue-900 bg-opacity-90 text-white text-xl md:text-2xl font-bold px-6 py-2 rounded shadow">
               17-23 AUG 2025
             </span>
             <span class="block text-yellow-500 font-bold text-lg md:text-xl mt-2">Mustard Seed Academy</span>
           </div>
           <div class="flex flex-col md:flex-row gap-4 justify-center items-center mt-4">
-            <a href="#register" class="inline-block px-8 py-3 bg-yellow-400 text-blue-900 font-bold rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 animate-bounce">
+            <a href="#register"
+              class="inline-block px-8 py-3 bg-yellow-400 text-blue-900 font-bold rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 animate-bounce">
               Register Now
             </a>
-            <button @click="showAttendance = true" class="inline-block px-8 py-3 bg-blue-900 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 animate-bounce">
+            <button @click="showAttendance = true"
+              class="inline-block px-8 py-3 bg-blue-900 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 animate-bounce">
               Attendance
             </button>
           </div>
         </div>
       </transition>
       <!-- Animated background shapes -->
-      <div class="absolute top-0 left-0 w-64 h-64 bg-yellow-200 bg-opacity-30 rounded-full blur-3xl animate-pulse -z-10"></div>
-      <div class="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 bg-opacity-30 rounded-full blur-3xl animate-pulse -z-10"></div>
+      <div
+        class="absolute top-0 left-0 w-64 h-64 bg-yellow-200 bg-opacity-30 rounded-full blur-3xl animate-pulse -z-10">
+      </div>
+      <div
+        class="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 bg-opacity-30 rounded-full blur-3xl animate-pulse -z-10">
+      </div>
     </section>
     <!-- About Section -->
     <section class="max-w-3xl mx-auto py-12 px-4 text-center animate-fade-in delay-1000">
       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">About the Camp Meeting</h3>
       <p class="text-lg text-black mb-2">
-        Join us for a life-changing spiritual experience at the 2025 SDA Camp Meeting! This year, our focus is on empowering individuals and families to maximize opportunities for wealth creation, spiritual growth, and community service. All are welcome—come and be blessed!
+        Join us for a life-changing spiritual experience at the 2025 SDA Camp Meeting! This year, our focus is on
+        empowering individuals and families to maximize opportunities for wealth creation, spiritual growth, and
+        community service. All are welcome—come and be blessed!
       </p>
     </section>
     <!-- Speakers Section -->
@@ -50,22 +59,26 @@
       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-8 text-center">Featured Speakers</h3>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="flex flex-col items-center group transition-transform duration-300 hover:-translate-y-2">
-          <img src="/images/maxwell.jpg" alt="Pr. Maxwell Kemboi" class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
+          <img src="/images/maxwell.jpg" alt="Pr. Maxwell Kemboi"
+            class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
           <span class="font-bold text-blue-900">Pr. Maxwell Kemboi</span>
           <span class="text-yellow-600 text-sm">Guest Speaker</span>
         </div>
         <div class="flex flex-col items-center group transition-transform duration-300 hover:-translate-y-2">
-          <img src="/images/yego.jpg" alt="Mrs. Yego" class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
+          <img src="/images/yego.jpg" alt="Mrs. Yego"
+            class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
           <span class="font-bold text-blue-900">Mrs. Yego</span>
           <span class="text-yellow-600 text-sm">2nd Speaker</span>
         </div>
         <div class="flex flex-col items-center group transition-transform duration-300 hover:-translate-y-2">
-          <img src="/images/brotherson.jpg" alt="Brotherson" class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
+          <img src="/images/brotherson.jpg" alt="Brotherson"
+            class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
           <span class="font-bold text-blue-900">Brotherson</span>
           <span class="text-yellow-600 text-sm">2nd Speaker</span>
         </div>
         <div class="flex flex-col items-center group transition-transform duration-300 hover:-translate-y-2">
-          <img src="/images/ptarus.jpg" alt="Pr. Joseph Tarus" class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
+          <img src="/images/ptarus.jpg" alt="Pr. Joseph Tarus"
+            class="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-400 mb-3 group-hover:scale-105 transition-transform duration-300" />
           <span class="font-bold text-blue-900">Pr. Joseph Tarus</span>
           <span class="text-yellow-600 text-sm">Host Pastor</span>
         </div>
@@ -75,17 +88,20 @@
     <section class="max-w-4xl mx-auto py-12 px-4 animate-fade-in delay-1400">
       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-8 text-center">Program Highlights</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1500">
+        <div
+          class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1500">
           <span class="text-4xl mb-2">🎤</span>
           <span class="font-bold text-blue-900 mb-1">Inspiring Sermons</span>
           <span class="text-black text-sm">Daily messages from dynamic speakers to uplift your spirit.</span>
         </div>
-        <div class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1600">
+        <div
+          class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1600">
           <span class="text-4xl mb-2">🎶</span>
           <span class="font-bold text-blue-900 mb-1">Music & Choirs</span>
           <span class="text-black text-sm">Enjoy uplifting music, choirs, and special performances.</span>
         </div>
-        <div class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1700">
+        <div
+          class="bg-white bg-opacity-90 rounded-xl shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300 animate-fade-in delay-1700">
           <span class="text-4xl mb-2">🧒</span>
           <span class="font-bold text-blue-900 mb-1">Youth & Children</span>
           <span class="text-black text-sm">Special programs for youth and children throughout the week.</span>
@@ -95,13 +111,25 @@
     <!-- Contact & Registration Section -->
     <section id="register" class="max-w-2xl mx-auto py-12 px-4 text-center animate-fade-in delay-1800">
       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Contact & Registration</h3>
-      <p class="text-black mb-2">For more information, contact Elder Maiyo: <a href="tel:0722909012" class="text-yellow-600 underline">0722909012</a></p>
-      <a href="#" class="inline-block mt-4 px-8 py-3 bg-blue-900 text-yellow-300 font-bold rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300">Register Your Interest</a>
+      <p class="text-black mb-2">For more information, contact Elder Maiyo: <a href="tel:0722909012"
+          class="text-yellow-600 underline">0722909012</a></p>
+      <a href="#"
+        class="inline-block mt-4 px-8 py-3 bg-blue-900 text-yellow-300 font-bold rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300">Register
+        Your Interest</a>
       <div class="mt-6 text-blue-700 text-sm">www.kabongwacamp2025.vercel.app</div>
     </section>
     <!-- Footer -->
     <footer class="py-6 text-center text-blue-900 bg-white bg-opacity-80 mt-auto animate-fade-in delay-2000">
+      <a href="/wrvf-camp-material.pdf" download
+        class="inline-block mt-6 px-8 py-3 bg-yellow-400 text-blue-900 font-bold rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 text-lg">
+        <svg class="inline-block w-6 h-6 mr-2 align-middle" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+        </svg>
+        Download Camp Material (PDF)
+      </a>
       <div>© 2025 Kabongwa & Kapchemoiyo SDA Camp Meeting. All rights reserved.</div>
+
     </footer>
     <AttendanceModal :show="showAttendance" @close="showAttendance = false" />
   </div>

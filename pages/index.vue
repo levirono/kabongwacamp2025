@@ -109,6 +109,21 @@
 
 <script setup>
 import { ref } from 'vue';
+
+useHead({
+  title: 'Kabongwa Kapchemoiywo Camp Meeting 2025',
+  meta: [
+    { name: 'description', content: 'KABONGWA KAPCHEMOIYWO CAMP MEETING 2025' },
+    { property: 'og:title', content: 'Kabongwa Kapchemoiywo Camp Meeting 2025' },
+    { property: 'og:description', content: 'KABONGWA KAPCHEMOIYWO CAM MEETING 2025' },
+    { property: 'og:image', content: '/images/preview.jpg' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Kabongwa Kapchemoiywo Camp Meeting 2025' },
+    { name: 'twitter:description', content: 'KABONGWA KAPCHEMOIYWO CAMP MEETING 2025' },
+    { name: 'twitter:image', content: '/images/preview.jpg' }
+  ]
+});
 const showAttendance = ref(false);
 </script>
 
@@ -144,4 +159,4 @@ const showAttendance = ref(false);
   opacity: 1;
   transform: translateY(0);
 }
-</style> 
+</style>

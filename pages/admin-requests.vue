@@ -32,6 +32,7 @@
 <script setup lang="ts">
 import Navbar from '../components/Navbar.vue';
 import { ref, onMounted } from 'vue';
+import { supabase } from '../server/utils/supabase';
 
 const requests = ref<any[]>([]);
 const loading = ref(true);

@@ -9,8 +9,11 @@
           <textarea v-model="request" placeholder="Your Prayer Request" class="border rounded px-4 py-2" rows="4"
             required></textarea>
           <input v-model="contact" type="text" placeholder="Contact (optional)" class="border rounded px-4 py-2" />
-          <button type="submit"
-            class="bg-blue-900 text-white font-bold px-6 py-2 rounded hover:bg-blue-700 transition">Submit</button>
+          <button type="submit" :disabled="submitting"
+            class="bg-blue-900 text-white font-bold px-6 py-2 rounded hover:bg-blue-700 transition">
+            <span v-if="submitting">Submitting...</span>
+            <span v-else>Submit</span>
+          </button>
           <div v-if="success" class="text-green-600 mt-2">Thank you! Your request has been submitted.</div>
           <div v-if="error" class="text-red-600 mt-2">There was an error. Please try again.</div>
         </form>
@@ -22,19 +25,23 @@
 <script setup lang="ts">
 import Navbar from '../components/Navbar.vue';
 import { ref } from 'vue';
+import { supabase } from '../server/utils/supabase';
 
 const name = ref('');
 const request = ref('');
 const contact = ref('');
 const success = ref(false);
 const error = ref(false);
+const submitting = ref(false);
 
 const submitRequest = async () => {
   success.value = false;
   error.value = false;
+  submitting.value = true;
   const { error: supaError } = await supabase.from('prayer_requests').insert([
     { name: name.value, request: request.value, contact: contact.value }
   ]);
+  submitting.value = false;
   if (supaError) {
     error.value = true;
   } else {
@@ -42,6 +49,9 @@ const submitRequest = async () => {
     name.value = '';
     request.value = '';
     contact.value = '';
+    setTimeout(() => {
+      success.value = false;
+    }, 3000);
   }
 };
 </script>

@@ -144,12 +144,12 @@ useHead({
     { name: 'description', content: 'KABONGWA KAPCHEMOIYWO CAMP MEETING 2025' },
     { property: 'og:title', content: 'Kabongwa Kapchemoiywo Camp Meeting 2025' },
     { property: 'og:description', content: 'KABONGWA KAPCHEMOIYWO CAM MEETING 2025' },
-    { property: 'og:image', content: '/images/preview.jpg' },
+    { property: 'og:image', content: 'https://kabo-kap-camp2025.vercel.app/images/preview.jpg' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Kabongwa Kapchemoiywo Camp Meeting 2025' },
     { name: 'twitter:description', content: 'KABONGWA KAPCHEMOIYWO CAMP MEETING 2025' },
-    { name: 'twitter:image', content: '/images/preview.jpg' }
+    { name: 'twitter:image', content: 'https://kabo-cap-camp2025.vercel.app/images/preview.jpg' }
   ]
 });
 const showAttendance = ref(false);
